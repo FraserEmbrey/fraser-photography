@@ -14,11 +14,6 @@ export default {
 	profileImage: 'profile.jpeg',
 	socialLinks: [
 		{
-			name: 'GitHub',
-			url: 'https://github.com/fraserembrey',
-			icon: Github,
-		} as SocialLink,
-		{
 			name: 'Instagram',
 			url: 'https://www.instagram.com/frasersframes',
 			icon: Instagram,
