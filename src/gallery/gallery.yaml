@@ -1,90 +1,1904 @@
 collections:
-  - id: nature
-    name: Nature
-  - id: travel
-    name: Travel
-  - id: street
+  - id: Events
+    name: Events
+  - id: Film
+    name: Film
+  - id: Portraits
+    name: Portraits
+  - id: Interiors
+    name: Interiors
+  - id: Street
     name: Street
+  - id: Urban landscape
+    name: Urban Landscape
 images:
-  - path: nature/nature-2.jpg
+  - path: Events/ESSNAWARDS 10.jpg
     meta:
-      title: Nature scene 2
-      description: Serene natural landscape capturing the essence of wilderness.
-      collections:
-        - nature
-    exif: {}
-  - path: nature/nature-3.jpg
-    meta:
-      title: Nature scene 3
-      description: Breathtaking natural vista showcasing environmental beauty.
-      collections:
-        - featured
-        - nature
-    exif: {}
-  - path: nature/nature-5.jpg
-    meta:
-      title: Nature scene 5
-      description: Natural landscape showing the raw beauty of the environment.
-      collections:
-        - nature
-    exif: {}
-  - path: nature/nature-7.jpg
-    meta:
-      title: Nature scene 7
-      description: Stunning natural landscape capturing environmental beauty.
-      collections:
-        - featured
-        - nature
-    exif: {}
-  - path: nature/nature-8.jpg
-    meta:
-      title: Nature scene 8
-      description: Beautiful natural vista showcasing environmental wonder.
-      collections:
-        - nature
-    exif: {}
-  - path: nature/L1002174.jpg
-    meta:
-      title: Travel scene 6
-      description: null
-      collections:
-        - featured
-        - nature
-    exif:
-      captureDate: 2025-03-27T10:35:21.000Z
-      fNumber: 8
-      focalLength: 28
-      iso: 100
-      model: LEICA Q3
-      shutterSpeed: 1250
-      lensModel: SUMMILUX 1:1.7/28 ASPH.
-  - path: nature/nature-10.jpg
-    meta:
-      title: Nature scene 10
-      description: Majestic natural landscape displaying environmental splendor.
-      collections:
-        - nature
-    exif: {}
-  - path: street/stree-1.jpg
-    meta:
-      title: Street photography 1
-      description: Urban scene capturing the essence of city life.
-      collections:
-        - featured
-        - street
-    exif: {}
-  - path: travel/travel-1.jpg
-    meta:
-      title: Travel scene 1
-      description: Journey through remarkable destinations.
-      collections:
-        - featured
-        - travel
-    exif: {}
-  - path: nature/nature-1.jpg
-    meta:
-      title: Nature 1
+      title: Essnawards 10
       description: ''
       collections:
-        - nature
-    exif: {}
+        - Events
+    exif:
+      captureDate: 2024-12-05T19:20:39.000Z
+      fNumber: 3.2
+      focalLength: 24
+      iso: 500
+      model: NIKON Z 6_2
+      shutterSpeed: 125
+      lensModel: NIKKOR Z 14-24mm f/2.8 S
+  - path: Events/ESSNAWARDS 12.jpg
+    meta:
+      title: Essnawards 12
+      description: ''
+      collections:
+        - Events
+    exif:
+      captureDate: 2024-12-05T19:21:43.000Z
+      fNumber: 3.2
+      focalLength: 16.5
+      iso: 2200
+      model: NIKON Z 6_2
+      shutterSpeed: 125
+      lensModel: NIKKOR Z 14-24mm f/2.8 S
+  - path: Events/ESSNAWARDS 156.jpg
+    meta:
+      title: Essnawards 156
+      description: ''
+      collections:
+        - Events
+    exif:
+      captureDate: 2024-12-05T22:08:10.000Z
+      fNumber: 1.2
+      focalLength: 50
+      iso: 640
+      model: NIKON Z 6_2
+      shutterSpeed: 160
+      lensModel: NIKKOR Z 50mm f/1.2 S
+  - path: Events/ESSNAWARDS 26.jpg
+    meta:
+      title: Essnawards 26
+      description: ''
+      collections:
+        - Events
+    exif:
+      captureDate: 2024-12-05T20:12:30.000Z
+      fNumber: 3.5
+      focalLength: 17
+      iso: 12800
+      model: NIKON Z 6_2
+      shutterSpeed: 200
+      lensModel: NIKKOR Z 14-24mm f/2.8 S
+  - path: Events/ESSNAWARDS 34.jpg
+    meta:
+      title: Essnawards 34
+      description: ''
+      collections:
+        - Events
+    exif:
+      captureDate: 2024-12-05T20:18:56.000Z
+      fNumber: 1.6
+      focalLength: 50
+      iso: 1800
+      model: NIKON Z 6_2
+      shutterSpeed: 160
+      lensModel: NIKKOR Z 50mm f/1.2 S
+  - path: Events/ESSNAWARDS 45.jpg
+    meta:
+      title: Essnawards 45
+      description: ''
+      collections:
+        - Events
+    exif:
+      captureDate: 2024-12-05T20:25:28.000Z
+      fNumber: 2.8
+      focalLength: 50
+      iso: 6400
+      model: NIKON Z 6_2
+      shutterSpeed: 160
+      lensModel: NIKKOR Z 50mm f/1.2 S
+  - path: Events/ESSNAWARDS 67.jpg
+    meta:
+      title: Essnawards 67
+      description: ''
+      collections:
+        - Events
+    exif:
+      captureDate: 2024-12-05T20:51:19.000Z
+      fNumber: 2.8
+      focalLength: 14.5
+      iso: 8000
+      model: NIKON Z 6_2
+      shutterSpeed: 250
+      lensModel: NIKKOR Z 14-24mm f/2.8 S
+  - path: Events/ESSNAWARDS 71.jpg
+    meta:
+      title: Essnawards 71
+      description: ''
+      collections:
+        - Events
+    exif:
+      captureDate: 2024-12-05T21:01:28.000Z
+      fNumber: 2.8
+      focalLength: 18.5
+      iso: 5000
+      model: NIKON Z 6_2
+      shutterSpeed: 200
+      lensModel: NIKKOR Z 14-24mm f/2.8 S
+  - path: Events/Marathon 15.jpg
+    meta:
+      title: Marathon 15
+      description: ''
+      collections:
+        - Events
+    exif:
+      model: Jpeg File
+      shutterSpeed: .nan
+      lensModel: '-- mm f/--'
+  - path: Events/Marathon 16.jpg
+    meta:
+      title: Marathon 16
+      description: ''
+      collections:
+        - Events
+    exif:
+      model: Jpeg File
+      shutterSpeed: .nan
+      lensModel: '-- mm f/--'
+  - path: Events/Marathon 17.jpg
+    meta:
+      title: Marathon 17
+      description: ''
+      collections:
+        - Events
+    exif:
+      model: Jpeg File
+      shutterSpeed: .nan
+      lensModel: '-- mm f/--'
+  - path: Events/Marathon 18.jpg
+    meta:
+      title: Marathon 18
+      description: ''
+      collections:
+        - Events
+    exif:
+      model: Jpeg File
+      shutterSpeed: .nan
+      lensModel: '-- mm f/--'
+  - path: Events/Marathon 19.jpg
+    meta:
+      title: Marathon 19
+      description: ''
+      collections:
+        - Events
+    exif:
+      model: Jpeg File
+      shutterSpeed: .nan
+      lensModel: '-- mm f/--'
+  - path: Events/Marathon 20.jpg
+    meta:
+      title: Marathon 20
+      description: ''
+      collections:
+        - Events
+    exif:
+      model: Jpeg File
+      shutterSpeed: .nan
+      lensModel: '-- mm f/--'
+  - path: Events/Marathon 21.jpg
+    meta:
+      title: Marathon 21
+      description: ''
+      collections:
+        - Events
+    exif:
+      model: Jpeg File
+      shutterSpeed: .nan
+      lensModel: '-- mm f/--'
+  - path: Events/Marathon 22.jpg
+    meta:
+      title: Marathon 22
+      description: ''
+      collections:
+        - Events
+    exif:
+      model: Jpeg File
+      shutterSpeed: .nan
+      lensModel: '-- mm f/--'
+  - path: Events/Marathon 23.jpg
+    meta:
+      title: Marathon 23
+      description: ''
+      collections:
+        - Events
+    exif:
+      model: Jpeg File
+      shutterSpeed: .nan
+      lensModel: '-- mm f/--'
+  - path: Events/Marathon 24.jpg
+    meta:
+      title: Marathon 24
+      description: ''
+      collections:
+        - Events
+    exif:
+      model: Jpeg File
+      shutterSpeed: .nan
+      lensModel: '-- mm f/--'
+  - path: Events/Marathon 25.jpg
+    meta:
+      title: Marathon 25
+      description: ''
+      collections:
+        - Events
+    exif:
+      model: Jpeg File
+      shutterSpeed: .nan
+      lensModel: '-- mm f/--'
+  - path: Events/Marathon 26.jpg
+    meta:
+      title: Marathon 26
+      description: ''
+      collections:
+        - Events
+        - featured
+    exif:
+      captureDate: 2025-04-27T13:24:52.000Z
+      fNumber: 2.8
+      focalLength: 98
+      iso: 100
+      model: NIKON Z 6_2
+      shutterSpeed: 2000
+      lensModel: NIKKOR Z 70-200mm f/2.8 VR S
+  - path: Events/Marathon 27.jpg
+    meta:
+      title: Marathon 27
+      description: ''
+      collections:
+        - Events
+        - featured
+    exif:
+      captureDate: 2025-04-27T13:12:25.000Z
+      fNumber: 9
+      focalLength: 70
+      iso: 100
+      model: NIKON Z 6_2
+      shutterSpeed: 200
+      lensModel: Nikon NIKKOR Z 24-70mm f/4 S
+  - path: Events/Z62_7398.jpeg
+    meta:
+      title: Z62 7398
+      description: ''
+      collections:
+        - Events
+    exif:
+      captureDate: 2023-08-11T23:48:37.000Z
+      fNumber: 1.2
+      focalLength: 50
+      iso: 1250
+      model: NIKON Z 6_2
+      shutterSpeed: 160
+      lensModel: NIKKOR Z 50mm f/1.2 S
+  - path: Events/Z62_7798.jpeg
+    meta:
+      title: Z62 7798
+      description: ''
+      collections:
+        - Events
+    exif:
+      captureDate: 2025-09-20T17:50:47.000Z
+      fNumber: 1.2
+      focalLength: 50
+      iso: 400
+      model: NIKON Z 6_2
+      shutterSpeed: 200
+      lensModel: NIKKOR Z 50mm f/1.2 S
+  - path: Events/Z62_7879.jpeg
+    meta:
+      title: Z62 7879
+      description: ''
+      collections:
+        - Events
+    exif:
+      captureDate: 2025-09-20T19:35:35.000Z
+      fNumber: 1.2
+      focalLength: 50
+      iso: 14400
+      model: NIKON Z 6_2
+      shutterSpeed: 400
+      lensModel: NIKKOR Z 50mm f/1.2 S
+  - path: Events/Z62_7881.jpeg
+    meta:
+      title: Z62 7881
+      description: ''
+      collections:
+        - Events
+    exif:
+      captureDate: 2025-09-20T19:35:42.000Z
+      fNumber: 1.2
+      focalLength: 50
+      iso: 25600
+      model: NIKON Z 6_2
+      shutterSpeed: 400
+      lensModel: NIKKOR Z 50mm f/1.2 S
+  - path: Events/Z62_8074.jpeg
+    meta:
+      title: Z62 8074
+      description: ''
+      collections:
+        - Events
+    exif:
+      captureDate: 2025-09-20T22:03:59.000Z
+      fNumber: 1.2
+      focalLength: 50
+      iso: 5000
+      model: NIKON Z 6_2
+      shutterSpeed: 125
+      lensModel: NIKKOR Z 50mm f/1.2 S
+  - path: Events/Z62_8158.jpeg
+    meta:
+      title: Z62 8158
+      description: ''
+      collections:
+        - Events
+    exif:
+      captureDate: 2025-09-20T23:39:37.000Z
+      fNumber: 1.2
+      focalLength: 50
+      iso: 7200
+      model: NIKON Z 6_2
+      shutterSpeed: 400
+      lensModel: NIKKOR Z 50mm f/1.2 S
+  - path: Events/Z62_8225.jpeg
+    meta:
+      title: Z62 8225
+      description: ''
+      collections:
+        - Events
+    exif:
+      captureDate: 2025-09-20T23:49:30.000Z
+      fNumber: 1.4
+      focalLength: 50
+      iso: 9000
+      model: NIKON Z 6_2
+      shutterSpeed: 250
+      lensModel: NIKKOR Z 50mm f/1.2 S
+  - path: Events/Z62_8231.jpeg
+    meta:
+      title: Z62 8231
+      description: ''
+      collections:
+        - Events
+    exif:
+      captureDate: 2025-09-20T23:53:06.000Z
+      fNumber: 1.3
+      focalLength: 50
+      iso: 5000
+      model: NIKON Z 6_2
+      shutterSpeed: 250
+      lensModel: NIKKOR Z 50mm f/1.2 S
+  - path: Events/Z62_8257.jpeg
+    meta:
+      title: Z62 8257
+      description: ''
+      collections:
+        - Events
+    exif:
+      captureDate: 2025-09-20T23:56:11.000Z
+      fNumber: 1.2
+      focalLength: 50
+      iso: 10000
+      model: NIKON Z 6_2
+      shutterSpeed: 400
+      lensModel: NIKKOR Z 50mm f/1.2 S
+  - path: Events/Z62_8299.jpeg
+    meta:
+      title: Z62 8299
+      description: ''
+      collections:
+        - Events
+        - featured
+    exif:
+      captureDate: 2025-09-21T00:00:18.000Z
+      fNumber: 1.4
+      focalLength: 50
+      iso: 25600
+      model: NIKON Z 6_2
+      shutterSpeed: 160
+      lensModel: NIKKOR Z 50mm f/1.2 S
+  - path: Events/_Z626150.jpeg
+    meta:
+      title: ' Z626150'
+      description: ''
+      collections:
+        - Events
+    exif:
+      captureDate: 2024-08-10T21:45:40.000Z
+      fNumber: 2.8
+      focalLength: 14
+      iso: 32000
+      model: NIKON Z 6_2
+      shutterSpeed: 60
+      lensModel: NIKKOR Z 14-24mm f/2.8 S
+  - path: Events/_Z626334.jpeg
+    meta:
+      title: ' Z626334'
+      description: ''
+      collections:
+        - Events
+    exif:
+      captureDate: 2024-08-10T22:14:47.000Z
+      fNumber: 1.3
+      focalLength: 50
+      iso: 3200
+      model: NIKON Z 6_2
+      shutterSpeed: 125
+      lensModel: NIKKOR Z 50mm f/1.2 S
+  - path: Events/_Z626373.jpeg
+    meta:
+      title: ' Z626373'
+      description: ''
+      collections:
+        - Events
+    exif:
+      captureDate: 2024-08-10T22:15:48.000Z
+      fNumber: 1.2
+      focalLength: 50
+      iso: 4500
+      model: NIKON Z 6_2
+      shutterSpeed: 125
+      lensModel: NIKKOR Z 50mm f/1.2 S
+  - path: Events/_Z626660.jpeg
+    meta:
+      title: ' Z626660'
+      description: ''
+      collections:
+        - Events
+    exif:
+      captureDate: 2024-08-10T23:12:55.000Z
+      fNumber: 1.2
+      focalLength: 50
+      iso: 11400
+      model: NIKON Z 6_2
+      shutterSpeed: 200
+      lensModel: NIKKOR Z 50mm f/1.2 S
+  - path: Events/_Z626760.jpeg
+    meta:
+      title: ' Z626760'
+      description: ''
+      collections:
+        - Events
+        - featured
+    exif:
+      captureDate: 2024-08-10T23:33:36.000Z
+      fNumber: 1.2
+      focalLength: 50
+      iso: 14400
+      model: NIKON Z 6_2
+      shutterSpeed: 200
+      lensModel: NIKKOR Z 50mm f/1.2 S
+  - path: Events/_Z626988.jpeg
+    meta:
+      title: ' Z626988'
+      description: ''
+      collections:
+        - Events
+    exif:
+      captureDate: 2023-08-11T20:52:59.000Z
+      fNumber: 1.2
+      focalLength: 50
+      iso: 3200
+      model: NIKON Z 6_2
+      shutterSpeed: 125
+      lensModel: NIKKOR Z 50mm f/1.2 S
+  - path: Events/_Z627014.jpeg
+    meta:
+      title: ' Z627014'
+      description: ''
+      collections:
+        - Events
+    exif:
+      captureDate: 2023-08-11T21:47:37.000Z
+      fNumber: 1.2
+      focalLength: 50
+      iso: 900
+      model: NIKON Z 6_2
+      shutterSpeed: 125
+      lensModel: NIKKOR Z 50mm f/1.2 S
+  - path: Events/_Z627201.jpeg
+    meta:
+      title: ' Z627201'
+      description: ''
+      collections:
+        - Events
+    exif:
+      captureDate: 2024-08-10T23:42:49.000Z
+      fNumber: 1.2
+      focalLength: 50
+      iso: 32000
+      model: NIKON Z 6_2
+      shutterSpeed: 320
+      lensModel: NIKKOR Z 50mm f/1.2 S
+  - path: Events/_Z627265.jpeg
+    meta:
+      title: ' Z627265'
+      description: ''
+      collections:
+        - Events
+        - featured
+    exif:
+      captureDate: 2023-08-11T22:38:50.000Z
+      fNumber: 1.3
+      focalLength: 50
+      iso: 1000
+      model: NIKON Z 6_2
+      shutterSpeed: 13
+      lensModel: NIKKOR Z 50mm f/1.2 S
+  - path: Events/_Z627272.jpeg
+    meta:
+      title: ' Z627272'
+      description: ''
+      collections:
+        - Events
+        - featured
+    exif:
+      captureDate: 2023-08-11T22:39:28.000Z
+      fNumber: 1.2
+      focalLength: 50
+      iso: 16000
+      model: NIKON Z 6_2
+      shutterSpeed: 125
+      lensModel: NIKKOR Z 50mm f/1.2 S
+  - path: Events/_Z627326.jpeg
+    meta:
+      title: ' Z627326'
+      description: ''
+      collections:
+        - Events
+    exif:
+      captureDate: 2024-08-11T00:40:57.000Z
+      fNumber: 1.3
+      focalLength: 50
+      iso: 7200
+      model: NIKON Z 6_2
+      shutterSpeed: 200
+      lensModel: NIKKOR Z 50mm f/1.2 S
+  - path: Events/_Z627337.jpeg
+    meta:
+      title: ' Z627337'
+      description: ''
+      collections:
+        - Events
+    exif:
+      captureDate: 2023-08-11T22:52:59.000Z
+      fNumber: 1.2
+      focalLength: 50
+      iso: 4000
+      model: NIKON Z 6_2
+      shutterSpeed: 25
+      lensModel: NIKKOR Z 50mm f/1.2 S
+  - path: Film/000004340007.jpeg
+    meta:
+      title: '000004340007'
+      description: ''
+      collections:
+        - Film
+    exif:
+      captureDate: 2024-06-09T14:10:38.000Z
+      model: EZ Controller
+      shutterSpeed: .nan
+  - path: Film/000004340022.jpeg
+    meta:
+      title: '000004340022'
+      description: ''
+      collections:
+        - Film
+    exif:
+      captureDate: 2024-06-09T14:11:06.000Z
+      model: EZ Controller
+      shutterSpeed: .nan
+  - path: Film/000012310014.jpeg
+    meta:
+      title: '000012310014'
+      description: ''
+      collections:
+        - Film
+    exif:
+      captureDate: 2024-08-21T17:44:02.000Z
+      model: EZ Controller
+      shutterSpeed: .nan
+  - path: Film/000012310019.jpeg
+    meta:
+      title: '000012310019'
+      description: ''
+      collections:
+        - Film
+        - featured
+    exif:
+      captureDate: 2024-08-21T17:44:02.000Z
+      model: EZ Controller
+      shutterSpeed: .nan
+  - path: Film/000082870007.jpeg
+    meta:
+      title: '000082870007'
+      description: ''
+      collections:
+        - Film
+    exif:
+      captureDate: 2024-03-18T15:00:21.000Z
+      fNumber: 5.6
+      focalLength: 50
+      iso: 50
+      model: TL Electro
+      shutterSpeed: 500
+  - path: Film/000082870013.jpeg
+    meta:
+      title: '000082870013'
+      description: ''
+      collections:
+        - Film
+        - featured
+    exif:
+      captureDate: 2024-03-18T15:01:06.000Z
+      fNumber: 5.6
+      focalLength: 50
+      iso: 50
+      model: TL Electro
+      shutterSpeed: 500
+  - path: Film/000082870016.jpeg
+    meta:
+      title: '000082870016'
+      description: ''
+      collections:
+        - Film
+    exif:
+      captureDate: 2024-03-18T15:01:29.000Z
+      fNumber: 5.6
+      focalLength: 50
+      iso: 50
+      model: TL Electro
+      shutterSpeed: 500
+  - path: Film/000082870026.jpeg
+    meta:
+      title: '000082870026'
+      description: ''
+      collections:
+        - Film
+    exif:
+      captureDate: 2024-03-18T15:02:45.000Z
+      fNumber: 5.6
+      focalLength: 50
+      iso: 50
+      model: TL Electro
+      shutterSpeed: 500
+  - path: Film/000092020015.jpeg
+    meta:
+      title: '000092020015'
+      description: ''
+      collections:
+        - Film
+    exif:
+      captureDate: 2025-02-07T12:46:45.000Z
+      model: EZ Controller
+      shutterSpeed: .nan
+  - path: Film/000092020023.jpeg
+    meta:
+      title: '000092020023'
+      description: ''
+      collections:
+        - Film
+    exif:
+      captureDate: 2025-02-07T12:47:49.000Z
+      model: EZ Controller
+      shutterSpeed: .nan
+  - path: Film/000251020025.jpeg
+    meta:
+      title: '000251020025'
+      description: ''
+      collections:
+        - Film
+    exif:
+      captureDate: 2024-11-01T16:22:19.000Z
+      fNumber: 5.6
+      focalLength: 50
+      iso: 100
+      model: TL Electro
+      shutterSpeed: .nan
+      lensModel: Yashica DS 50mm 1:1.4
+  - path: Film/000251020027.jpeg
+    meta:
+      title: '000251020027'
+      description: ''
+      collections:
+        - Film
+    exif:
+      captureDate: 2024-11-01T16:22:26.000Z
+      fNumber: 5.6
+      focalLength: 50
+      iso: 100
+      model: TL Electro
+      shutterSpeed: .nan
+      lensModel: Yashica DS 50mm 1:1.4
+  - path: Film/0012-cf3e9.jpeg
+    meta:
+      title: 0012 Cf3e9
+      description: ''
+      collections:
+        - Film
+    exif:
+      captureDate: 2025-02-18T15:47:41.000Z
+      model: EZ Controller
+      shutterSpeed: .nan
+  - path: Film/0022-0f3db.jpeg
+    meta:
+      title: 0022 0f3db
+      description: ''
+      collections:
+        - Film
+    exif:
+      captureDate: 2025-02-18T15:49:07.000Z
+      model: EZ Controller
+      shutterSpeed: .nan
+  - path: Film/003-f16fa.jpeg
+    meta:
+      title: 003 F16fa
+      description: ''
+      collections:
+        - Film
+    exif:
+      captureDate: 2025-02-18T15:46:13.000Z
+      model: EZ Controller
+      shutterSpeed: .nan
+  - path: Film/0032-8a668.jpeg
+    meta:
+      title: 0032 8a668
+      description: ''
+      collections:
+        - Film
+    exif:
+      captureDate: 2025-02-18T15:50:42.000Z
+      model: EZ Controller
+      shutterSpeed: .nan
+  - path: Film/0036-478ff.jpeg
+    meta:
+      title: 0036 478ff
+      description: ''
+      collections:
+        - Film
+    exif:
+      captureDate: 2025-02-18T15:52:01.000Z
+      model: EZ Controller
+      shutterSpeed: .nan
+  - path: Film/011400020035.jpeg
+    meta:
+      title: '011400020035'
+      description: ''
+      collections:
+        - Film
+    exif:
+      captureDate: 2024-03-15T17:19:27.000Z
+      fNumber: 5.6
+      focalLength: 50
+      iso: 400
+      model: F80
+      shutterSpeed: 100
+  - path: Film/Film 2025 43.jpeg
+    meta:
+      title: Film 2025 43
+      description: ''
+      collections:
+        - Film
+    exif:
+      captureDate: 2025-06-01T22:47:25.000Z
+      fNumber: 5.6
+      focalLength: 50
+      iso: 100
+      model: Nikkormat EL
+      shutterSpeed: 500
+      lensModel: 50mm 1:1.4
+  - path: Film/Film 3.jpeg
+    meta:
+      title: Film 3
+      description: ''
+      collections:
+        - Film
+    exif:
+      captureDate: 2022-08-10T18:43:42.000Z
+      model: OpticFilm 8100
+      shutterSpeed: .nan
+      lensModel: '-- mm f/--'
+  - path: Film/IMG_0153.jpeg
+    meta:
+      title: Img 0153
+      description: ''
+      collections:
+        - Film
+    exif:
+      captureDate: 2024-03-07T12:42:48.000Z
+      model: EZ Controller
+      shutterSpeed: .nan
+  - path: Film/IMG_0162.jpeg
+    meta:
+      title: Img 0162
+      description: ''
+      collections:
+        - Film
+    exif:
+      captureDate: 2024-03-07T12:43:33.000Z
+      model: EZ Controller
+      shutterSpeed: .nan
+  - path: Film/IMG_0217.jpeg
+    meta:
+      title: Img 0217
+      description: ''
+      collections:
+        - Film
+    exif:
+      captureDate: 2024-03-07T12:41:36.000Z
+      model: EZ Controller
+      shutterSpeed: .nan
+  - path: Film/IMG_0261.jpeg
+    meta:
+      title: Img 0261
+      description: ''
+      collections:
+        - Film
+    exif:
+      captureDate: 2024-03-07T12:54:24.000Z
+      model: EZ Controller
+      shutterSpeed: .nan
+  - path: Film/IMG_0290.jpeg
+    meta:
+      title: Img 0290
+      description: ''
+      collections:
+        - Film
+    exif:
+      captureDate: 2024-03-07T00:00:00.000Z
+      fNumber: 5.6
+      focalLength: 50
+      iso: 100
+      model: TL Electro
+      shutterSpeed: 1000
+      lensModel: Yashinon DS 50mm 1:1.4
+  - path: Film/IMG_0292.jpeg
+    meta:
+      title: Img 0292
+      description: ''
+      collections:
+        - Film
+    exif:
+      captureDate: 2024-03-07T12:51:15.000Z
+      model: EZ Controller
+      shutterSpeed: .nan
+  - path: Film/IMG_0293.jpeg
+    meta:
+      title: Img 0293
+      description: ''
+      collections:
+        - Film
+    exif:
+      captureDate: 2024-03-07T12:54:22.000Z
+      model: EZ Controller
+      shutterSpeed: .nan
+  - path: Film/IMG_0294.jpeg
+    meta:
+      title: Img 0294
+      description: ''
+      collections:
+        - Film
+    exif:
+      captureDate: 2024-03-07T12:51:19.000Z
+      fNumber: 5.6
+      focalLength: 50
+      iso: 100
+      model: TL Electro
+      shutterSpeed: 500
+      lensModel: Yashinon DS 50mm 1:1.4
+  - path: Film/IMG_3471.jpeg
+    meta:
+      title: Img 3471
+      description: ''
+      collections:
+        - Film
+    exif:
+      captureDate: 2024-06-08T13:29:34.000Z
+      model: EZ Controller
+      shutterSpeed: .nan
+  - path: Film/IMG_3475.jpeg
+    meta:
+      title: Img 3475
+      description: ''
+      collections:
+        - Film
+    exif:
+      captureDate: 2024-06-08T13:27:55.000Z
+      model: EZ Controller
+      shutterSpeed: .nan
+  - path: Film/IMG_3481.jpeg
+    meta:
+      title: Img 3481
+      description: ''
+      collections:
+        - Film
+    exif:
+      captureDate: 2024-06-08T13:28:40.000Z
+      model: EZ Controller
+      shutterSpeed: .nan
+  - path: Film/IMG_3496.jpeg
+    meta:
+      title: Img 3496
+      description: ''
+      collections:
+        - Film
+    exif:
+      captureDate: 2024-06-08T13:29:42.000Z
+      model: EZ Controller
+      shutterSpeed: .nan
+  - path: Film/Lanesborough.jpeg
+    meta:
+      title: Lanesborough
+      description: ''
+      collections:
+        - Film
+    exif:
+      captureDate: 2020-09-05T00:53:09.000Z
+      model: OpticFilm 8100
+      shutterSpeed: .nan
+  - path: Film/Petworth park 7.jpeg
+    meta:
+      title: Petworth Park 7
+      description: ''
+      collections:
+        - Film
+    exif:
+      captureDate: 2015-12-26T13:13:58.000Z
+      model: OpticFilm 8100
+      shutterSpeed: .nan
+  - path: Film/Untitled (8).jpeg
+    meta:
+      title: 'Untitled 8 '
+      description: ''
+      collections:
+        - Film
+    exif:
+      captureDate: 2022-08-15T14:01:48.000Z
+      model: OpticFilm 8100
+      shutterSpeed: .nan
+  - path: Film/Yashica 7.jpeg
+    meta:
+      title: Yashica 7
+      description: ''
+      collections:
+        - Film
+    exif:
+      captureDate: 2024-03-04T17:24:02.000Z
+      focalLength: 50
+      iso: 200
+      model: TL Electro
+      shutterSpeed: .nan
+      lensModel: Yashinon 50mm 1:1.4 DS
+  - path: Portraits/BTN Marathon 88.jpg
+    meta:
+      title: Btn Marathon 88
+      description: ''
+      collections:
+        - Portraits
+    exif:
+      captureDate: 2024-04-14T12:46:09.000Z
+      fNumber: 1.2
+      focalLength: 50
+      iso: 100
+      model: NIKON Z 6_2
+      shutterSpeed: 4000
+      lensModel: NIKKOR Z 50mm f/1.2 S
+  - path: Portraits/Caterina 33.jpeg
+    meta:
+      title: Caterina 33
+      description: ''
+      collections:
+        - Portraits
+    exif:
+      captureDate: 2025-05-22T15:52:31.000Z
+      fNumber: 4
+      focalLength: 45
+      iso: 1100
+      model: NIKON Z 6_2
+      shutterSpeed: 200
+      lensModel: Nikon NIKKOR Z 24-70mm f/4 S
+  - path: Portraits/Caterina 38.jpeg
+    meta:
+      title: Caterina 38
+      description: ''
+      collections:
+        - Portraits
+    exif:
+      captureDate: 2025-05-22T15:53:38.000Z
+      fNumber: 5.6
+      focalLength: 57
+      iso: 2500
+      model: NIKON Z 6_2
+      shutterSpeed: 160
+      lensModel: Nikon NIKKOR Z 24-70mm f/4 S
+  - path: Portraits/Caterina 49.jpeg
+    meta:
+      title: Caterina 49
+      description: ''
+      collections:
+        - Portraits
+    exif:
+      captureDate: 2025-05-22T15:59:30.000Z
+      fNumber: 4
+      focalLength: 63
+      iso: 1250
+      model: NIKON Z 6_2
+      shutterSpeed: 200
+      lensModel: Nikon NIKKOR Z 24-70mm f/4 S
+  - path: Portraits/Caterina 51.jpeg
+    meta:
+      title: Caterina 51
+      description: ''
+      collections:
+        - Portraits
+    exif:
+      captureDate: 2025-05-22T16:02:04.000Z
+      fNumber: 3.2
+      focalLength: 98
+      iso: 1250
+      model: NIKON Z 6_2
+      shutterSpeed: 200
+      lensModel: NIKKOR Z 70-200mm f/2.8 VR S
+  - path: Portraits/Caterina 53.jpeg
+    meta:
+      title: Caterina 53
+      description: ''
+      collections:
+        - Portraits
+    exif:
+      captureDate: 2025-05-22T16:02:26.000Z
+      fNumber: 2.8
+      focalLength: 98
+      iso: 400
+      model: NIKON Z 6_2
+      shutterSpeed: 200
+      lensModel: NIKKOR Z 70-200mm f/2.8 VR S
+  - path: Portraits/Caterina 63.jpeg
+    meta:
+      title: Caterina 63
+      description: ''
+      collections:
+        - Portraits
+    exif:
+      captureDate: 2025-05-22T16:45:06.000Z
+      fNumber: 5.6
+      focalLength: 35
+      iso: 640
+      model: NIKON Z 6_2
+      shutterSpeed: 60
+      lensModel: Nikon NIKKOR Z 24-70mm f/4 S
+  - path: Portraits/Furniture shop 10.jpg
+    meta:
+      title: Furniture Shop 10
+      description: ''
+      collections:
+        - Portraits
+    exif:
+      shutterSpeed: .nan
+  - path: Portraits/Furniture shop 11.jpg
+    meta:
+      title: Furniture Shop 11
+      description: ''
+      collections:
+        - Portraits
+    exif:
+      shutterSpeed: .nan
+  - path: Portraits/Furniture shop 30.jpg
+    meta:
+      title: Furniture Shop 30
+      description: ''
+      collections:
+        - Portraits
+    exif:
+      shutterSpeed: .nan
+  - path: Portraits/Furniture shop 50.jpg
+    meta:
+      title: Furniture Shop 50
+      description: ''
+      collections:
+        - Portraits
+    exif:
+      shutterSpeed: .nan
+  - path: Portraits/Furniture shop 75.jpg
+    meta:
+      title: Furniture Shop 75
+      description: ''
+      collections:
+        - Portraits
+    exif:
+      shutterSpeed: .nan
+  - path: Portraits/Highlands — Aperture-priority AE at f1.4, 50mm [201].jpeg
+    meta:
+      title: 'Highlands Aperture Priority Ae At F1 4 50mm 201 '
+      description: ''
+      collections:
+        - Portraits
+        - featured
+    exif:
+      captureDate: 2022-09-20T19:05:17.000Z
+      fNumber: 1.4
+      focalLength: 50
+      iso: 200
+      model: NIKON Z 6_2
+      shutterSpeed: 13
+      lensModel: NIKKOR Z 50mm f/1.2 S
+  - path: Portraits/Night walk 142.jpeg
+    meta:
+      title: Night Walk 142
+      description: ''
+      collections:
+        - Portraits
+    exif:
+      captureDate: 2022-11-09T18:09:32.000Z
+      fNumber: 1.2
+      focalLength: 50
+      iso: 100
+      model: NIKON Z 6_2
+      shutterSpeed: 50
+      lensModel: NIKKOR Z 50mm f/1.2 S
+  - path: Portraits/_Z626579.jpeg
+    meta:
+      title: ' Z626579'
+      description: ''
+      collections:
+        - Portraits
+        - featured
+    exif:
+      captureDate: 2023-10-22T20:02:59.000Z
+      fNumber: 1.6
+      focalLength: 50
+      iso: 100
+      model: NIKON Z 6_2
+      shutterSpeed: 25
+      lensModel: NIKKOR Z 50mm f/1.2 S
+  - path: Interiors/Cornwall — Program AE at f3.5, 14mm [5298].jpeg
+    meta:
+      title: 'Cornwall Program Ae At F3 5 14mm 5298 '
+      description: ''
+      collections:
+        - Interiors
+    exif:
+      captureDate: 2022-04-17T20:00:04.000Z
+      fNumber: 3.5
+      focalLength: 14
+      iso: 100
+      model: NIKON Z 6_2
+      shutterSpeed: 50
+      lensModel: NIKKOR Z 14-24mm f/2.8 S
+  - path: Interiors/Desk 2.jpeg
+    meta:
+      title: Desk 2
+      description: ''
+      collections:
+        - Interiors
+        - featured
+    exif:
+      captureDate: 2022-03-18T16:19:05.000Z
+      shutterSpeed: .nan
+  - path: Interiors/IMG_0395_NORAW.jpeg
+    meta:
+      title: Img 0395 Noraw
+      description: ''
+      collections:
+        - Interiors
+    exif:
+      captureDate: 2022-05-14T18:05:13.000Z
+      fNumber: 1.8
+      focalLength: 1.5700000524639703
+      iso: 320
+      model: iPhone 13 Pro
+      shutterSpeed: 60
+      lensModel: iPhone 13 Pro back triple camera 1.57mm f/1.8
+  - path: Interiors/IMG_0891_NORAW.jpeg
+    meta:
+      title: Img 0891 Noraw
+      description: ''
+      collections:
+        - Interiors
+    exif:
+      captureDate: 2022-05-16T18:28:41.000Z
+      fNumber: 1.8
+      focalLength: 1.5700000524639703
+      iso: 25
+      model: iPhone 13 Pro
+      shutterSpeed: 121
+      lensModel: iPhone 13 Pro back camera 1.57mm f/1.8
+  - path: Interiors/IMG_2854.jpeg
+    meta:
+      title: Img 2854
+      description: ''
+      collections:
+        - Interiors
+    exif:
+      captureDate: 2025-04-13T14:15:25.000Z
+      fNumber: 2.2
+      focalLength: 2.220000028611935
+      iso: 250
+      model: iPhone 15 Pro Max
+      shutterSpeed: 49.00000000000001
+      lensModel: iPhone 15 Pro Max back camera 2.22mm f/2.2
+  - path: Interiors/IMG_5179.jpeg
+    meta:
+      title: Img 5179
+      description: ''
+      collections:
+        - Interiors
+    exif:
+      captureDate: 2023-02-01T15:33:12.000Z
+      fNumber: 1.8
+      focalLength: 1.5700000524639703
+      iso: 160
+      model: iPhone 13 Pro
+      shutterSpeed: 50
+      lensModel: iPhone 13 Pro back triple camera 1.57mm f/1.8
+  - path: Interiors/IMG_5182.jpeg
+    meta:
+      title: Img 5182
+      description: ''
+      collections:
+        - Interiors
+    exif:
+      captureDate: 2023-02-01T15:37:03.000Z
+      fNumber: 1.8
+      focalLength: 1.5700000524639703
+      iso: 160
+      model: iPhone 13 Pro
+      shutterSpeed: 50
+      lensModel: iPhone 13 Pro back triple camera 1.57mm f/1.8
+  - path: Interiors/IMG_9087.jpeg
+    meta:
+      title: Img 9087
+      description: ''
+      collections:
+        - Interiors
+    exif:
+      captureDate: 2022-08-06T13:21:22.000Z
+      fNumber: 1.5
+      focalLength: 5.7
+      iso: 500
+      model: iPhone 13 Pro
+      shutterSpeed: 40
+      lensModel: iPhone 13 Pro back triple camera 5.7mm f/1.5
+  - path: Interiors/Z62_1158_HDR.jpeg
+    meta:
+      title: Z62 1158 Hdr
+      description: ''
+      collections:
+        - Interiors
+    exif:
+      captureDate: 2025-04-10T15:01:08.000Z
+      fNumber: 8
+      focalLength: 14
+      iso: 100
+      model: NIKON Z 6_2
+      shutterSpeed: 250
+      lensModel: NIKKOR Z 14-24mm f/2.8 S
+  - path: Interiors/Z62_1257.jpeg
+    meta:
+      title: Z62 1257
+      description: ''
+      collections:
+        - Interiors
+    exif:
+      captureDate: 2025-04-10T15:27:55.000Z
+      fNumber: 3.5
+      focalLength: 24
+      iso: 100
+      model: NIKON Z 6_2
+      shutterSpeed: 320
+      lensModel: NIKKOR Z 14-24mm f/2.8 S
+  - path: Interiors/Z62_1352.jpeg
+    meta:
+      title: Z62 1352
+      description: ''
+      collections:
+        - Interiors
+        - featured
+    exif:
+      captureDate: 2025-04-10T15:50:22.000Z
+      fNumber: 5.6
+      focalLength: 14
+      iso: 100
+      model: NIKON Z 6_2
+      shutterSpeed: 250
+      lensModel: NIKKOR Z 14-24mm f/2.8 S
+  - path: Interiors/Z62_6100.jpeg
+    meta:
+      title: Z62 6100
+      description: ''
+      collections:
+        - Interiors
+    exif:
+      captureDate: 2025-08-05T19:19:26.000Z
+      fNumber: 8
+      focalLength: 15.5
+      iso: 100
+      model: NIKON Z 6_2
+      shutterSpeed: 8
+      lensModel: NIKKOR Z 14-24mm f/2.8 S
+  - path: Interiors/_Z620851.jpeg
+    meta:
+      title: ' Z620851'
+      description: ''
+      collections:
+        - Interiors
+    exif:
+      captureDate: 2022-11-06T12:08:20.000Z
+      fNumber: 9
+      focalLength: 14
+      iso: 100
+      model: NIKON Z 6_2
+      shutterSpeed: 13
+      lensModel: NIKKOR Z 14-24mm f/2.8 S
+  - path: Interiors/_Z624641.jpeg
+    meta:
+      title: ' Z624641'
+      description: ''
+      collections:
+        - Interiors
+    exif:
+      captureDate: 2025-03-16T14:19:06.000Z
+      fNumber: 5.6
+      focalLength: 40
+      iso: 100
+      model: NIKON Z 6_2
+      shutterSpeed: 40
+      lensModel: NIKKOR Z 40mm f/2
+  - path: Interiors/studio 2.jpeg
+    meta:
+      title: Studio 2
+      description: ''
+      collections:
+        - Interiors
+    exif:
+      captureDate: 2022-08-04T18:09:50.000Z
+      fNumber: 5.6
+      focalLength: 14
+      iso: 100
+      model: NIKON Z 6_2
+      shutterSpeed: 4
+      lensModel: NIKKOR Z 14-24mm f/2.8 S
+  - path: Street/IMG_3891.jpeg
+    meta:
+      title: Img 3891
+      description: ''
+      collections:
+        - Street
+    exif:
+      captureDate: 2024-03-16T14:51:48.000Z
+      fNumber: 1.7799999713880652
+      focalLength: 6.764999865652793
+      iso: 64
+      model: iPhone 15 Pro Max
+      shutterSpeed: 876
+      lensModel: iPhone 15 Pro Max back triple camera 6.765mm f/1.78
+  - path: Street/IMG_4058.jpeg
+    meta:
+      title: Img 4058
+      description: ''
+      collections:
+        - Street
+    exif:
+      captureDate: 2024-03-16T15:40:15.000Z
+      fNumber: 1.7799999713880652
+      focalLength: 6.764999865652793
+      iso: 80
+      model: iPhone 15 Pro Max
+      shutterSpeed: 149
+      lensModel: iPhone 15 Pro Max back triple camera 6.765mm f/1.78
+  - path: Street/IMG_9433.jpeg
+    meta:
+      title: Img 9433
+      description: ''
+      collections:
+        - Street
+        - featured
+    exif:
+      captureDate: 2025-03-30T13:43:20.000Z
+      fNumber: 1.7799999713880652
+      focalLength: 6.764999865652793
+      iso: 80
+      model: iPhone 15 Pro Max
+      shutterSpeed: 4608
+      lensModel: iPhone 15 Pro Max back triple camera 6.765mm f/1.78
+  - path: Street/Walk 09.04.2023 303.jpeg
+    meta:
+      title: Walk 09 04 2023 303
+      description: ''
+      collections:
+        - Street
+    exif:
+      captureDate: 2023-04-09T12:58:49.000Z
+      fNumber: 5.6
+      focalLength: 300
+      iso: 110
+      model: NIKON Z 6_2
+      shutterSpeed: 250
+      lensModel: Nikon AF-S VR Zoom-Nikkor 70-300mm f/4.5-5.6G IF-ED
+  - path: Street/Walk 09.04.2023 434.jpeg
+    meta:
+      title: Walk 09 04 2023 434
+      description: ''
+      collections:
+        - Street
+    exif:
+      captureDate: 2023-04-09T14:28:49.000Z
+      fNumber: 5.6
+      focalLength: 300
+      iso: 1600
+      model: NIKON Z 6_2
+      shutterSpeed: 1000
+      lensModel: Nikon AF-S VR Zoom-Nikkor 70-300mm f/4.5-5.6G IF-ED
+  - path: Street/Walk 09.04.2023 437.jpeg
+    meta:
+      title: Walk 09 04 2023 437
+      description: ''
+      collections:
+        - Street
+    exif:
+      captureDate: 2023-04-09T14:28:56.000Z
+      fNumber: 4.5
+      focalLength: 92
+      iso: 360
+      model: NIKON Z 6_2
+      shutterSpeed: 1000
+      lensModel: Nikon AF-S VR Zoom-Nikkor 70-300mm f/4.5-5.6G IF-ED
+  - path: Street/Walk 09.04.2023 459.jpeg
+    meta:
+      title: Walk 09 04 2023 459
+      description: ''
+      collections:
+        - Street
+    exif:
+      captureDate: 2023-04-09T16:10:53.000Z
+      fNumber: 1.8
+      focalLength: 85
+      iso: 100
+      model: NIKON Z 6_2
+      shutterSpeed: 8000
+      lensModel: Viltrox AF 85/1.8 Z
+  - path: Street/Z62_1067.jpeg
+    meta:
+      title: Z62 1067
+      description: ''
+      collections:
+        - Street
+    exif:
+      captureDate: 2025-04-10T14:44:02.000Z
+      fNumber: 6.3
+      focalLength: 24
+      iso: 110
+      model: NIKON Z 6_2
+      shutterSpeed: 200
+      lensModel: NIKKOR Z 14-24mm f/2.8 S
+  - path: Street/Z62_1326.jpeg
+    meta:
+      title: Z62 1326
+      description: ''
+      collections:
+        - Street
+    exif:
+      captureDate: 2025-04-10T15:47:42.000Z
+      fNumber: 4
+      focalLength: 24
+      iso: 100
+      model: NIKON Z 6_2
+      shutterSpeed: 200
+      lensModel: NIKKOR Z 14-24mm f/2.8 S
+  - path: Street/Z62_1329.jpeg
+    meta:
+      title: Z62 1329
+      description: ''
+      collections:
+        - Street
+    exif:
+      captureDate: 2025-04-10T15:48:10.000Z
+      fNumber: 4
+      focalLength: 24
+      iso: 100
+      model: NIKON Z 6_2
+      shutterSpeed: 200
+      lensModel: NIKKOR Z 14-24mm f/2.8 S
+  - path: Street/Z62_1966.jpeg
+    meta:
+      title: Z62 1966
+      description: ''
+      collections:
+        - Street
+    exif:
+      captureDate: 2025-04-11T19:26:13.000Z
+      fNumber: 2.8
+      focalLength: 80
+      iso: 100
+      model: NIKON Z 6_2
+      shutterSpeed: 500
+      lensModel: NIKKOR Z 70-200mm f/2.8 VR S
+  - path: Street/Z62_4441.jpeg
+    meta:
+      title: Z62 4441
+      description: ''
+      collections:
+        - Street
+    exif:
+      captureDate: 2024-11-02T21:12:10.000Z
+      fNumber: 1.2
+      focalLength: 50
+      iso: 450
+      model: NIKON Z 6_2
+      shutterSpeed: 80
+      lensModel: NIKKOR Z 50mm f/1.2 S
+  - path: Street/_Z621385.jpeg
+    meta:
+      title: ' Z621385'
+      description: ''
+      collections:
+        - Street
+    exif:
+      captureDate: 2024-04-01T16:55:22.000Z
+      fNumber: 1.8
+      focalLength: 85
+      iso: 100
+      model: NIKON Z 6_2
+      shutterSpeed: 1600
+      lensModel: Viltrox AF 85/1.8 Z
+  - path: Street/_Z622209.jpeg
+    meta:
+      title: ' Z622209'
+      description: ''
+      collections:
+        - Street
+    exif:
+      captureDate: 2025-02-21T13:22:19.000Z
+      fNumber: 1.8
+      focalLength: 85
+      iso: 100
+      model: NIKON Z 6_2
+      shutterSpeed: 1250
+      lensModel: Viltrox AF 85/1.8 Z
+  - path: Street/_Z622216.jpeg
+    meta:
+      title: ' Z622216'
+      description: ''
+      collections:
+        - Street
+    exif:
+      captureDate: 2025-02-21T14:54:03.000Z
+      fNumber: 1.8
+      focalLength: 85
+      iso: 100
+      model: NIKON Z 6_2
+      shutterSpeed: 250
+      lensModel: Viltrox AF 85/1.8 Z
+  - path: Street/_Z622553.jpeg
+    meta:
+      title: ' Z622553'
+      description: ''
+      collections:
+        - Street
+        - featured
+    exif:
+      captureDate: 2025-02-27T13:36:55.000Z
+      fNumber: 2.8
+      focalLength: 50
+      iso: 100
+      model: NIKON Z 6_2
+      shutterSpeed: 5000
+      lensModel: NIKKOR Z 50mm f/1.2 S
+  - path: Street/_Z626093 from Capture One.jpeg
+    meta:
+      title: ' Z626093 From Capture One'
+      description: ''
+      collections:
+        - Street
+    exif:
+      captureDate: 2021-08-22T16:57:59.000Z
+      fNumber: 4
+      focalLength: 48
+      iso: 100
+      model: NIKON Z 6_2
+      shutterSpeed: 800
+      lensModel: Nikon NIKKOR Z 24-70mm f/4 S
+  - path: Street/_Z626306.jpeg
+    meta:
+      title: ' Z626306'
+      description: ''
+      collections:
+        - Street
+        - featured
+    exif:
+      captureDate: 2025-03-26T16:51:14.000Z
+      fNumber: 5.6
+      focalLength: 50
+      iso: 100
+      model: NIKON Z 6_2
+      shutterSpeed: 2500
+      lensModel: NIKKOR Z 50mm f/1.2 S
+  - path: Street/_Z626400.jpeg
+    meta:
+      title: ' Z626400'
+      description: ''
+      collections:
+        - Street
+        - featured
+    exif:
+      captureDate: 2025-03-26T17:26:42.000Z
+      fNumber: 3.5
+      focalLength: 50
+      iso: 100
+      model: NIKON Z 6_2
+      shutterSpeed: 800
+      lensModel: NIKKOR Z 50mm f/1.2 S
+  - path: Street/_Z626429.jpeg
+    meta:
+      title: ' Z626429'
+      description: ''
+      collections:
+        - Street
+    exif:
+      captureDate: 2025-03-26T17:33:11.000Z
+      fNumber: 6.3
+      focalLength: 50
+      iso: 100
+      model: NIKON Z 6_2
+      shutterSpeed: 160
+      lensModel: NIKKOR Z 50mm f/1.2 S
+  - path: Street/_Z626433.jpeg
+    meta:
+      title: ' Z626433'
+      description: ''
+      collections:
+        - Street
+    exif:
+      captureDate: 2025-03-26T17:33:26.000Z
+      fNumber: 5.6
+      focalLength: 50
+      iso: 100
+      model: NIKON Z 6_2
+      shutterSpeed: 100
+      lensModel: NIKKOR Z 50mm f/1.2 S
+  - path: Street/_Z626566 from Capture One.jpeg
+    meta:
+      title: ' Z626566 From Capture One'
+      description: ''
+      collections:
+        - Street
+    exif:
+      captureDate: 2021-08-27T19:35:55.000Z
+      fNumber: 2.2
+      focalLength: 50
+      iso: 100
+      model: NIKON Z 6_2
+      shutterSpeed: 1000
+      lensModel: Nikon AF-S NIKKOR 50mm f/1.4G
+  - path: Street/_Z628624.jpeg
+    meta:
+      title: ' Z628624'
+      description: ''
+      collections:
+        - Street
+    exif:
+      captureDate: 2023-04-08T18:53:25.000Z
+      fNumber: 1.2
+      focalLength: 50
+      iso: 100
+      model: NIKON Z 6_2
+      shutterSpeed: 200
+      lensModel: NIKKOR Z 50mm f/1.2 S
+  - path: Urban landscape/IMG_1691.jpeg
+    meta:
+      title: Img 1691
+      description: ''
+      collections:
+        - Urban landscape
+    exif:
+      captureDate: 2025-04-10T12:39:11.000Z
+      fNumber: 2.8
+      focalLength: 15.659999847383
+      iso: 50
+      model: iPhone 15 Pro Max
+      shutterSpeed: 1513
+      lensModel: iPhone 15 Pro Max back camera 15.66mm f/2.8
+  - path: Urban landscape/Z62_0849.jpeg
+    meta:
+      title: Z62 0849
+      description: ''
+      collections:
+        - Urban landscape
+    exif:
+      captureDate: 2025-04-10T13:58:59.000Z
+      fNumber: 18
+      focalLength: 14
+      iso: 1250
+      model: NIKON Z 6_2
+      shutterSpeed: 200
+      lensModel: NIKKOR Z 14-24mm f/2.8 S
+  - path: Urban landscape/Z62_1151.jpeg
+    meta:
+      title: Z62 1151
+      description: ''
+      collections:
+        - Urban landscape
+    exif:
+      captureDate: 2025-04-10T14:59:12.000Z
+      fNumber: 6.3
+      focalLength: 15.5
+      iso: 110
+      model: NIKON Z 6_2
+      shutterSpeed: 200
+      lensModel: NIKKOR Z 14-24mm f/2.8 S
+  - path: Urban landscape/Z62_1159.jpeg
+    meta:
+      title: Z62 1159
+      description: ''
+      collections:
+        - Urban landscape
+    exif:
+      captureDate: 2025-04-10T15:01:32.000Z
+      fNumber: 9
+      focalLength: 20
+      iso: 100
+      model: NIKON Z 6_2
+      shutterSpeed: 320
+      lensModel: NIKKOR Z 14-24mm f/2.8 S
+  - path: Urban landscape/Z62_1180.jpeg
+    meta:
+      title: Z62 1180
+      description: ''
+      collections:
+        - Urban landscape
+    exif:
+      captureDate: 2025-04-10T15:05:19.000Z
+      fNumber: 6.3
+      focalLength: 14
+      iso: 100
+      model: NIKON Z 6_2
+      shutterSpeed: 200
+      lensModel: NIKKOR Z 14-24mm f/2.8 S
+  - path: Urban landscape/Z62_1224_HDR.jpeg
+    meta:
+      title: Z62 1224 Hdr
+      description: ''
+      collections:
+        - Urban landscape
+    exif:
+      captureDate: 2025-04-10T15:19:16.000Z
+      fNumber: 2.8
+      focalLength: 14
+      iso: 180
+      model: NIKON Z 6_2
+      shutterSpeed: 400
+      lensModel: NIKKOR Z 14-24mm f/2.8 S
+  - path: Urban landscape/Z62_1231.jpeg
+    meta:
+      title: Z62 1231
+      description: ''
+      collections:
+        - Urban landscape
+    exif:
+      captureDate: 2025-04-10T15:20:31.000Z
+      fNumber: 6.3
+      focalLength: 24
+      iso: 110
+      model: NIKON Z 6_2
+      shutterSpeed: 200
+      lensModel: NIKKOR Z 14-24mm f/2.8 S
+  - path: Urban landscape/Z62_1282_HDR.jpeg
+    meta:
+      title: Z62 1282 Hdr
+      description: ''
+      collections:
+        - Urban landscape
+    exif:
+      captureDate: 2025-04-10T15:37:15.000Z
+      fNumber: 10
+      focalLength: 24
+      iso: 100
+      model: NIKON Z 6_2
+      shutterSpeed: 1000
+      lensModel: NIKKOR Z 14-24mm f/2.8 S
+  - path: Urban landscape/Z62_1289.jpeg
+    meta:
+      title: Z62 1289
+      description: ''
+      collections:
+        - Urban landscape
+    exif:
+      captureDate: 2025-04-10T15:37:46.000Z
+      fNumber: 5.6
+      focalLength: 24
+      iso: 100
+      model: NIKON Z 6_2
+      shutterSpeed: 320
+      lensModel: NIKKOR Z 14-24mm f/2.8 S
+  - path: Urban landscape/Z62_1308.jpeg
+    meta:
+      title: Z62 1308
+      description: ''
+      collections:
+        - Urban landscape
+    exif:
+      captureDate: 2025-04-10T15:40:27.000Z
+      fNumber: 7.1
+      focalLength: 14
+      iso: 100
+      model: NIKON Z 6_2
+      shutterSpeed: 500
+      lensModel: NIKKOR Z 14-24mm f/2.8 S
+  - path: Urban landscape/Z62_1316.jpeg
+    meta:
+      title: Z62 1316
+      description: ''
+      collections:
+        - Urban landscape
+    exif:
+      captureDate: 2025-04-10T15:43:43.000Z
+      fNumber: 22
+      focalLength: 14
+      iso: 640
+      model: NIKON Z 6_2
+      shutterSpeed: 200
+      lensModel: NIKKOR Z 14-24mm f/2.8 S
+  - path: Urban landscape/Z62_1317.jpeg
+    meta:
+      title: Z62 1317
+      description: ''
+      collections:
+        - Urban landscape
+    exif:
+      captureDate: 2025-04-10T15:43:56.000Z
+      fNumber: 22
+      focalLength: 18
+      iso: 1800
+      model: NIKON Z 6_2
+      shutterSpeed: 200
+      lensModel: NIKKOR Z 14-24mm f/2.8 S
+  - path: Urban landscape/Z62_1349.jpeg
+    meta:
+      title: Z62 1349
+      description: ''
+      collections:
+        - Urban landscape
+    exif:
+      captureDate: 2025-04-10T15:49:24.000Z
+      fNumber: 2.8
+      focalLength: 24
+      iso: 720
+      model: NIKON Z 6_2
+      shutterSpeed: 200
+      lensModel: NIKKOR Z 14-24mm f/2.8 S
+  - path: Urban landscape/_Z626285.jpeg
+    meta:
+      title: ' Z626285'
+      description: ''
+      collections:
+        - Urban landscape
+    exif:
+      captureDate: 2025-03-26T16:45:18.000Z
+      fNumber: 5.6
+      focalLength: 50
+      iso: 100
+      model: NIKON Z 6_2
+      shutterSpeed: 2500
+      lensModel: NIKKOR Z 50mm f/1.2 S
+  - path: Urban landscape/_Z626365.jpeg
+    meta:
+      title: ' Z626365'
+      description: ''
+      collections:
+        - Urban landscape
+    exif:
+      captureDate: 2025-03-26T17:04:16.000Z
+      fNumber: 9
+      focalLength: 50
+      iso: 100
+      model: NIKON Z 6_2
+      shutterSpeed: 320
+      lensModel: NIKKOR Z 50mm f/1.2 S

@@ -8,19 +8,19 @@ export interface SocialLink {
 }
 
 export default {
-	title: 'SR',
-	favicon: 'favicon.ico',
-	owner: 'Sara Richard',
-	profileImage: 'profile.webp',
+	title: 'FE',
+	favicon: 'favicon.svg',
+	owner: 'Fraser Embrey',
+	profileImage: 'profile.jpeg',
 	socialLinks: [
 		{
 			name: 'GitHub',
-			url: 'https://github.com/rockem/astro-photography-portfolio',
+			url: 'https://github.com/fraserembrey',
 			icon: Github,
 		} as SocialLink,
 		{
 			name: 'Instagram',
-			url: 'https://www.instagram.com',
+			url: 'https://www.instagram.com/frasersframes',
 			icon: Instagram,
 		} as SocialLink,
 	],
