@@ -1,0 +1,77 @@
+---
+import 'glightbox/dist/css/glightbox.css';
+import '../styles/glightbox-custom.css';
+import { Image } from 'astro:assets';
+import type { Image as ImageType } from '../data/galleryData';
+
+interface Props {
+	images: ImageType[];
+	initialLoadCount?: number;
+}
+
+const { images, initialLoadCount = 10 } = Astro.props;
+const initialImages = images.slice(0, initialLoadCount);
+const remainingImages = images.slice(initialLoadCount);
+---
+
+<section id="photo-grid" class="relative w-full mx-auto overflow-hidden">
+	<!-- Initial images that load immediately -->
+	{
+		initialImages.map((image, index) => (
+			<a
+				href={image.src.src}
+				class="photo-item glightbox absolute transition-transform hover:scale-[1.02] hover:z-10"
+				data-gallery="gallery1"
+				data-type="image"
+				data-glightbox={image.description ? `title: ${image.description}` : undefined}
+				data-loaded="true"
+			>
+				<Image
+					src={image.src}
+					quality={70}
+					format="webp"
+					width={image.src.width}
+					height={image.src.height}
+					class="w-full h-full object-cover rounded-sm shadow-sm hover:shadow-lg transition-shadow"
+					alt={image.title}
+				/>
+			</a>
+		))
+	}
+	
+	<!-- Placeholder skeletons for remaining images -->
+	{
+		remainingImages.map((image, index) => (
+			<div
+				class="photo-item photo-placeholder absolute bg-gray-200 animate-pulse rounded-sm"
+				data-image-index={initialLoadCount + index}
+				data-loaded="false"
+				data-image-data={JSON.stringify({
+					src: image.src.src,
+					title: image.title,
+					description: image.description,
+					width: image.src.width,
+					height: image.src.height
+				})}
+			>
+				<div class="w-full h-full bg-gray-300 rounded-sm"></div>
+			</div>
+		))
+	}
+</section>
+
+<!-- Load more button -->
+{remainingImages.length > 0 && (
+	<div class="text-center mt-8">
+		<button 
+			id="load-more-btn" 
+			class="px-6 py-3 bg-black text-white rounded-lg hover:bg-gray-800 transition-colors"
+		>
+			Load More Images ({remainingImages.length} remaining)
+		</button>
+	</div>
+)}
+
+<script>
+	import '../scripts/photo-grid';
+</script>
