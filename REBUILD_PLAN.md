@@ -56,15 +56,16 @@ Modern editorial, not trendy. Timeless, not dated. Confident, not loud.
 
 ### Typography
 
+**DECISION PENDING** — premium font required. See open questions below.
+
 | Role | Font | Notes |
 |---|---|---|
-| Display / headings | **Cormorant Garamond** (or Playfair Display if preferred) | Elegant serif; editorial feel; carries brand weight |
-| Body / UI | **DM Sans** (or keep Inter) | Clean, readable, neutral |
-| Logo / wordmark | **Cormorant SC** or a custom SVG wordmark | Consider moving away from Dancing Script — it reads as generic |
+| Display / headings | TBD — premium serif | See candidates below |
+| Body / UI | TBD — premium sans | See candidates below |
+| Logo / wordmark | TBD — SVG logomark exists, wordmark option also being considered | |
 
-Use `@fontsource/cormorant-garamond` and `@fontsource/dm-sans` (npm, no CDN
-round-trips, subsettable). Decision on final fonts is a brand question — these
-are strong candidates, not final choices.
+Fonts must be self-hosted (no CDN round-trips). Adobe Fonts, Fontshare, or
+licensed fonts preferred over Google Fonts for a premium feel.
 
 ### Colour Palette
 
@@ -74,9 +75,13 @@ are strong candidates, not final choices.
 --colour-ink:      #1C1A18   /* near-black — softer than pure black */
 --colour-muted:    #7A746E   /* secondary text, captions, labels */
 --colour-rule:     #DDD9D4   /* dividers, borders */
---colour-accent:   TBD       /* single optional accent — consider warm amber
-                                #C97D4E or cool slate #6B7F8C — brand decision */
+--colour-accent:   TBD pink  /* CONFIRMED: pink. Specific shade TBD —
+                                see open questions for tone options */
 ```
+
+Pink accent confirmed. Specific shade TBD — needs to sit well against warm
+off-white without fighting the photography. A muted/dusty rose will age
+better than a saturated or bright pink.
 
 Images work better against warm off-white than pure white. The palette above
 is intentionally restrained so the photography dominates.
@@ -231,13 +236,16 @@ services: {
 }
 ```
 
-### Gallery System (keep existing pattern)
+### Gallery System
 
-The `imageStore.ts` / `galleryData.ts` + `gallery.yaml` pattern is good. Extend
-it slightly:
-- Add `featured: true` flag to individual images for homepage curation
-- Support optional `caption` and `altText` fields on images
-- The `npm run generate` script continues to work for bulk-adding images
+Written from scratch, but the same architecture: YAML manifest per gallery
+collection, Sharp for build-time image optimisation, Astro `<Image />` for
+rendering. The YAML approach is good — it's the implementation that gets
+rebuilt.
+
+- `featured: true` flag on individual images for homepage curation
+- Optional `caption` and `altText` fields
+- `npm run generate` script for bulk-adding images from a folder
 
 ### Image Optimisation
 
@@ -345,15 +353,30 @@ site sees significant traffic, at which point it's a good problem to have.
 
 Before or during implementation, these need answers from Fraser:
 
-1. **Logo / wordmark** — Keep "FE" in Dancing Script? Commission a proper mark?
-   Or a text-based wordmark in Cormorant SC? This anchors the whole brand.
+1. **Logo / wordmark** — OPEN. SVG logomark exists but Fraser unsure about it.
+   Options: (a) use the SVG mark, (b) text wordmark "Fraser Embrey" or
+   "Fraser Embrey Photography", (c) monogram "FE" in a premium typeface,
+   (d) combination mark (SVG + text). Can prototype multiple options early in
+   Phase 1. Sharing the SVG would help evaluate it.
 
-2. **Accent colour** — Warm amber, cool slate, or stay monochrome? Affects the
-   whole feel. Worth making with brand reference images.
+2. **Accent colour** — CONFIRMED pink. Specific shade TBD. Candidates:
+   - `#C4748A` — dusty rose, refined, ages well
+   - `#D4849A` — medium rose, warmer
+   - `#B85C72` — deeper rose, more dramatic
+   - `#E8B4BC` — soft blush, very subtle
+   Used sparingly: CTAs, active states, hover underlines, decorative rules.
+   Not used on or near photos.
 
-3. **Font confirmation** — Cormorant Garamond + DM Sans is a strong suggestion.
-   If Playfair Display + Inter feels more right, it's also a solid choice.
-   The current site already has both loaded.
+3. **Font** — OPEN, premium required. Candidates by source:
+   - **Adobe Fonts** (free with Adobe CC — Fraser likely already has access):
+     Freight Display Pro, Warnock Pro, Acumin Pro, Neue Haas Grotesk Display
+   - **Fontshare** (free, high quality): Zodiak (serif), Satoshi (sans),
+     Cabinet Grotesk (sans), Instrument (serif)
+   - **Google Fonts** (premium-feeling options): Fraunces, Instrument Serif,
+     Spectral, DM Serif Display
+   - **Licensed** (one-off cost): GT Sectra, Canela, Tiempos Headline
+   Recommendation: check Adobe Fonts first — if CC subscription exists, this
+   is the path to genuinely premium type at no extra cost.
 
 4. **Service offering list** — What are the 3–5 services to feature? Rough scope
    and positioning for each.
@@ -367,8 +390,8 @@ Before or during implementation, these need answers from Fraser:
 7. **Hero image** — What single image best represents the brand for the homepage
    hero? This is the most important creative decision.
 
-8. **Domain/Netlify setup** — fraser.photography is already configured in
-   `astro.config.mts`. Does the domain need to point to a new Netlify site?
+8. **Domain/Netlify setup** — fraser.photography is configured. Does the domain
+   need to point to a new Netlify site, or is there an existing one?
 
 ---
 
