@@ -13,24 +13,15 @@ through great work, clear process, and authentic voice, and generate enquiries.
 
 ---
 
-## What We're Keeping from the Current Codebase
+## Starting Fresh
 
-| Keep | Why |
-|---|---|
-| `src/data/imageStore.ts` + `galleryData.ts` | Solid YAML-driven gallery system, already battle-tested |
-| `src/gallery/` images + directory structure | Good starting point; folder-per-collection convention works |
-| `site.config.mts` pattern | Clean central config, extend it |
-| Sharp image processing pipeline | Already set up, produces optimised images at build time |
-| Astro 5 + Tailwind v4 | Both are already the right choices |
-| `astro.config.mts` site URL (`fraser.photography`) | Correct |
+This is a clean-slate build. The existing codebase is a community template that
+was used to experiment; nothing from it is being carried forward except the
+actual photography assets.
 
-| Replace | With |
-|---|---|
-| Alpine.js (CDN) | Astro View Transitions + CSS + tiny vanilla JS where unavoidable |
-| GLightbox (JS lightbox) | CSS-first lightbox using `<dialog>` or native browser behaviour |
-| Template's generic pages | Purpose-built pages |
-| Google Fonts CDN calls | Self-hosted fonts via `fontsource` npm packages |
-| `base` path prefix throughout | Netlify needs no base path; remove this complexity |
+**The only thing migrated from the old repo:** `src/gallery/` — the raw images
+organised by collection folder. Everything else (components, scripts, layouts,
+styles, data layer, config, dependencies) is written from scratch with purpose.
 
 ---
 
