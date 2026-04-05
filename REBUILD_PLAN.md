@@ -149,16 +149,36 @@ Content Collection entries. Each project is a curated story:
 
 These are powerful for SEO and for demonstrating depth of work.
 
+**CONFIRMED projects:**
+
+- **ESSNA Awards** (`/work/essna-awards`) — awards ceremony coverage
+- **London Marathon — Bowel Cancer UK** (`/work/london-marathon-bowel-cancer-uk`)
+  — charity marathon coverage; good human interest angle for the write-up
+
 ### Services `/services`
 
 Overview page listing all offerings as cards: what, for whom, rough scope.
-No prices necessarily, but clear positioning.
 
-Example services (to be confirmed):
-- **Event Coverage** — corporate events, ceremonies, launches
-- **Sports & Running Events** — marathon/race coverage (existing marathon work)
-- **Awards & Galas** — internal awards, formal dinners
-- **Portraits** — professional headshots, team photos
+**CONFIRMED service structure:**
+
+- **Event Photography — Half Day** (~4 hours)
+  - Corporate events, conferences, product launches
+  - Awards ceremonies & galas
+  - Social & charity events
+- **Event Photography — Full Day** (~8 hours)
+  - Same event types as above, extended coverage
+  - Ideal for all-day conferences, multi-part award evenings
+- **Sports & Running Events**
+  - Marathon and road race coverage (established — London Marathon work)
+  - Growing specialism; positioned as a developing area alongside events
+
+The half/full day split works well as a clear, understandable pricing structure
+without publishing exact rates. Sport is worth giving its own page as a
+specialism-in-progress — it signals intent to clients and helps with SEO for
+"sports photographer" searches.
+
+Future: if corporate/charity events become distinct enough in audience, they
+could get their own pages. Start combined and split later if needed.
 
 ### Service Pages `/services/[service-slug]`
 
@@ -355,37 +375,37 @@ site sees significant traffic, at which point it's a good problem to have.
 
 Before or during implementation, these need answers from Fraser:
 
-1. **Logo / wordmark** — OPEN. SVG logomark exists but Fraser unsure about it.
-   Options: (a) use the SVG mark, (b) text wordmark "Fraser Embrey" or
-   "Fraser Embrey Photography", (c) monogram "FE" in a premium typeface,
-   (d) combination mark (SVG + text). Can prototype multiple options early in
-   Phase 1. Sharing the SVG would help evaluate it.
+1. **Logo / wordmark** — CONFIRMED: text wordmark. Exact form TBD — options
+   are "Fraser Embrey", "Fraser Embrey Photography", or "FE" monogram. Will
+   be set in Freight Display Pro or Acumin Pro, not a script font.
+   Prototype a couple of options in Phase 1.
 
-2. **Accent colour** — CONFIRMED pink. Specific shade TBD. Candidates:
+2. **Accent colour** — CONFIRMED pink, exact shade still open. Candidates:
    - `#C4748A` — dusty rose, refined, ages well
    - `#D4849A` — medium rose, warmer
    - `#B85C72` — deeper rose, more dramatic
    - `#E8B4BC` — soft blush, very subtle
    Used sparingly: CTAs, active states, hover underlines, decorative rules.
-   Not used on or near photos.
+   Not used on or near photos. Can be decided when we see Phase 1 in browser.
 
 3. **Font** — CONFIRMED. Freight Display Pro (headings) + Acumin Pro (body),
    both via Adobe Fonts (Adobe CC).
 
-4. **Service offering list** — What are the 3–5 services to feature? Rough scope
-   and positioning for each.
+4. **Services** — CONFIRMED. Event Photography Half Day, Event Photography
+   Full Day, Sports & Running Events. See page breakdown above.
 
-5. **Project content** — Which events/shoots become "project" deep-dives?
-   Marathon series is an obvious one (lots of existing images). What else?
+5. **Projects** — CONFIRMED. ESSNA Awards + London Marathon (Bowel Cancer UK).
 
-6. **Blog intent** — Primarily SEO/trust-building, or does Fraser actively want
-   to write? Affects how much infrastructure to build.
+6. **Blog intent** — CONFIRMED: SEO and trust-building primarily. Build full
+   infrastructure (index + post template + RSS) but no pressure to publish
+   frequently. Quality over cadence.
 
-7. **Hero image** — What single image best represents the brand for the homepage
-   hero? This is the most important creative decision.
+7. **Hero image** — OPEN. What single image best represents the brand for the
+   homepage hero? Most important creative decision before launch.
 
-8. **Domain/Netlify setup** — fraser.photography is configured. Does the domain
-   need to point to a new Netlify site, or is there an existing one?
+8. **Domain/Netlify setup** — fraser.photography is configured in astro.config.
+   Does the domain need pointing to a new Netlify site, or is there an
+   existing one?
 
 ---
 
