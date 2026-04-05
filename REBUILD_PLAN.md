@@ -56,16 +56,18 @@ Modern editorial, not trendy. Timeless, not dated. Confident, not loud.
 
 ### Typography
 
-**DECISION PENDING** — premium font required. See open questions below.
+**CONFIRMED** — Adobe Fonts (requires Adobe CC subscription).
 
 | Role | Font | Notes |
 |---|---|---|
-| Display / headings | TBD — premium serif | See candidates below |
-| Body / UI | TBD — premium sans | See candidates below |
-| Logo / wordmark | TBD — SVG logomark exists, wordmark option also being considered | |
+| Display / headings | **Freight Display Pro** | High contrast, editorial, dramatic at large sizes |
+| Body / UI | **Acumin Pro** | Clean, neutral, highly readable; wide weight range |
+| Logo / wordmark | TBD — see open questions | |
 
-Fonts must be self-hosted (no CDN round-trips). Adobe Fonts, Fontshare, or
-licensed fonts preferred over Google Fonts for a premium feel.
+Self-host via the Adobe Fonts "Web Projects" feature (generates a CSS embed
+with `@font-face` declarations pointing to Adobe's CDN, or download for
+self-hosting). Alternatively, use the `@adobe/fontface` approach if
+self-hosting is preferred for performance/privacy.
 
 ### Colour Palette
 
@@ -367,16 +369,8 @@ Before or during implementation, these need answers from Fraser:
    Used sparingly: CTAs, active states, hover underlines, decorative rules.
    Not used on or near photos.
 
-3. **Font** — OPEN, premium required. Candidates by source:
-   - **Adobe Fonts** (free with Adobe CC — Fraser likely already has access):
-     Freight Display Pro, Warnock Pro, Acumin Pro, Neue Haas Grotesk Display
-   - **Fontshare** (free, high quality): Zodiak (serif), Satoshi (sans),
-     Cabinet Grotesk (sans), Instrument (serif)
-   - **Google Fonts** (premium-feeling options): Fraunces, Instrument Serif,
-     Spectral, DM Serif Display
-   - **Licensed** (one-off cost): GT Sectra, Canela, Tiempos Headline
-   Recommendation: check Adobe Fonts first — if CC subscription exists, this
-   is the path to genuinely premium type at no extra cost.
+3. **Font** — CONFIRMED. Freight Display Pro (headings) + Acumin Pro (body),
+   both via Adobe Fonts (Adobe CC).
 
 4. **Service offering list** — What are the 3–5 services to feature? Rough scope
    and positioning for each.
