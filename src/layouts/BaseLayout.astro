@@ -1,0 +1,71 @@
+---
+import '../styles/global.css';
+import siteConfig from '../../site.config.mts';
+import { ClientRouter } from 'astro:transitions';
+
+interface Props {
+	title?: string;
+	description?: string;
+	ogImage?: string;
+	ogType?: 'website' | 'article';
+}
+
+const {
+	title,
+	description = siteConfig.description,
+	ogImage = '/images/og-default.jpg',
+	ogType = 'website',
+} = Astro.props;
+
+const pageTitle = title ? `${title} — ${siteConfig.owner}` : siteConfig.siteName;
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+---
+
+<html lang="en" class="h-full">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="generator" content={Astro.generator} />
+
+		<!-- Identity -->
+		<title>{pageTitle}</title>
+		<meta name="description" content={description} />
+		<link rel="canonical" href={canonicalURL} />
+
+		<!-- Favicon -->
+		<link rel="icon" type="image/svg+xml" href={`/${siteConfig.favicon}`} />
+
+		<!-- Open Graph -->
+		<meta property="og:type" content={ogType} />
+		<meta property="og:title" content={pageTitle} />
+		<meta property="og:description" content={description} />
+		<meta property="og:url" content={canonicalURL} />
+		<meta property="og:image" content={new URL(ogImage, Astro.site)} />
+		<meta property="og:site_name" content={siteConfig.siteName} />
+
+		<!-- Twitter / X card -->
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content={pageTitle} />
+		<meta name="twitter:description" content={description} />
+		<meta name="twitter:image" content={new URL(ogImage, Astro.site)} />
+
+		<!--
+			Adobe Fonts — add your web project embed code here.
+			Go to fonts.adobe.com → Web Projects → copy the <link> tag.
+			Example:
+			<link rel="stylesheet" href="https://use.typekit.net/XXXXXXX.css" />
+
+			Fonts used:
+			  - freight-display-pro  (headings)
+			  - acumin-pro           (body / UI)
+
+			Until this is added, Georgia and system-ui fallbacks render.
+		-->
+
+		<!-- Astro View Transitions -->
+		<ClientRouter />
+	</head>
+	<body class="h-full">
+		<slot />
+	</body>
+</html>

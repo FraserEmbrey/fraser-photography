@@ -1,0 +1,25 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import NavBar from '../components/nav/NavBar.astro';
+import Footer from '../components/shared/Footer.astro';
+
+interface Props {
+	title?: string;
+	description?: string;
+	ogImage?: string;
+	ogType?: 'website' | 'article';
+	// When true, the hero sits behind the nav (full-bleed photo heroes).
+	// Nav renders transparent initially and gains a background on scroll.
+	transparentNav?: boolean;
+}
+
+const { transparentNav = false, ...baseProps } = Astro.props;
+---
+
+<BaseLayout {...baseProps}>
+	<NavBar transparent={transparentNav} />
+	<main>
+		<slot />
+	</main>
+	<Footer />
+</BaseLayout>

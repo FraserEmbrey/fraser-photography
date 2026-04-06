@@ -1,0 +1,181 @@
+---
+import siteConfig from '../../../site.config.mts';
+
+interface Props {
+	// When transparent=true, the nav starts see-through (for full-bleed heroes).
+	// It gains a solid background once the user scrolls past the fold.
+	transparent?: boolean;
+}
+
+const { transparent = false } = Astro.props;
+const { wordmark, navItems } = siteConfig;
+const currentPath = Astro.url.pathname;
+---
+
+<header
+	id="site-nav"
+	data-transparent={transparent}
+	class="fixed top-0 left-0 right-0 z-50 transition-all duration-300"
+>
+	<div class="wrap flex items-center justify-between h-16">
+		<!-- Wordmark -->
+		<a
+			href="/"
+			class="font-display text-xl tracking-tight text-ink hover:text-accent transition-colors duration-200"
+			aria-label="Fraser Embrey Photography — home"
+		>
+			{wordmark}
+		</a>
+
+		<!-- Desktop nav -->
+		<nav aria-label="Main navigation" class="hidden md:flex items-center gap-8">
+			{
+				navItems.map((item) => {
+					const isActive =
+						item.href === '/'
+							? currentPath === '/'
+							: currentPath.startsWith(item.href);
+					return (
+						<a
+							href={item.href}
+							class:list={[
+								'nav-link relative text-sm font-body font-medium tracking-wide uppercase text-ink transition-colors duration-200',
+								'after:absolute after:bottom-[-3px] after:left-0 after:h-px after:bg-accent',
+								'after:transition-[width] after:duration-300 after:ease-out',
+								isActive ? 'after:w-full text-accent' : 'after:w-0 hover:after:w-full',
+							]}
+							aria-current={isActive ? 'page' : undefined}
+						>
+							{item.label}
+						</a>
+					);
+				})
+			}
+		</nav>
+
+		<!-- Mobile menu toggle -->
+		<button
+			id="menu-toggle"
+			aria-expanded="false"
+			aria-controls="mobile-menu"
+			aria-label="Open navigation menu"
+			class="md:hidden flex flex-col justify-center items-center w-10 h-10 gap-[6px] text-ink"
+		>
+			<!-- Hamburger lines — toggled via JS -->
+			<span class="menu-bar block w-6 h-px bg-current transition-transform duration-300 origin-center"></span>
+			<span class="menu-bar block w-6 h-px bg-current transition-opacity duration-300"></span>
+			<span class="menu-bar block w-6 h-px bg-current transition-transform duration-300 origin-center"></span>
+		</button>
+	</div>
+
+	<!-- Mobile menu — height animated via CSS grid trick -->
+	<div id="mobile-menu" role="navigation" aria-label="Mobile navigation" aria-hidden="true">
+		<div>
+			<!-- inner div required for grid height animation -->
+			<nav class="wrap flex flex-col gap-1 pb-6 pt-2 border-t border-rule">
+				{
+					navItems.map((item) => {
+						const isActive =
+							item.href === '/'
+								? currentPath === '/'
+								: currentPath.startsWith(item.href);
+						return (
+							<a
+								href={item.href}
+								class:list={[
+									'py-2 text-base font-body font-medium text-ink transition-colors duration-200',
+									isActive ? 'text-accent' : 'hover:text-accent',
+								]}
+								aria-current={isActive ? 'page' : undefined}
+							>
+								{item.label}
+							</a>
+						);
+					})
+				}
+			</nav>
+		</div>
+	</div>
+</header>
+
+<style>
+	/* Scrolled state — applied by JS */
+	#site-nav {
+		background-color: transparent;
+	}
+
+	#site-nav.is-scrolled,
+	#site-nav[data-transparent='false'] {
+		background-color: var(--color-bg);
+		box-shadow: 0 1px 0 var(--color-rule);
+	}
+
+	/* Mobile menu closed by default */
+	#mobile-menu {
+		display: grid;
+		grid-template-rows: 0fr;
+		overflow: hidden;
+		transition: grid-template-rows 280ms ease;
+		background-color: var(--color-bg);
+	}
+
+	#mobile-menu > div {
+		min-height: 0;
+		overflow: hidden;
+	}
+
+	#mobile-menu.is-open {
+		grid-template-rows: 1fr;
+	}
+
+	/* Hamburger → X animation */
+	#site-nav.menu-open .menu-bar:nth-child(1) {
+		transform: translateY(7px) rotate(45deg);
+	}
+	#site-nav.menu-open .menu-bar:nth-child(2) {
+		opacity: 0;
+	}
+	#site-nav.menu-open .menu-bar:nth-child(3) {
+		transform: translateY(-7px) rotate(-45deg);
+	}
+</style>
+
+<script>
+	function initNav() {
+		const nav = document.getElementById('site-nav') as HTMLElement;
+		const toggle = document.getElementById('menu-toggle') as HTMLButtonElement;
+		const menu = document.getElementById('mobile-menu') as HTMLElement;
+		const isTransparent = nav.dataset.transparent === 'true';
+
+		// Scroll behaviour
+		function updateScrollState() {
+			const scrolled = window.scrollY > 60;
+			nav.classList.toggle('is-scrolled', scrolled || !isTransparent);
+		}
+
+		window.addEventListener('scroll', updateScrollState, { passive: true });
+		updateScrollState();
+
+		// Mobile menu toggle
+		toggle.addEventListener('click', () => {
+			const isOpen = menu.classList.toggle('is-open');
+			nav.classList.toggle('menu-open', isOpen);
+			toggle.setAttribute('aria-expanded', String(isOpen));
+			menu.setAttribute('aria-hidden', String(!isOpen));
+			toggle.setAttribute('aria-label', isOpen ? 'Close navigation menu' : 'Open navigation menu');
+		});
+
+		// Close mobile menu on nav link click
+		menu.querySelectorAll('a').forEach((link) => {
+			link.addEventListener('click', () => {
+				menu.classList.remove('is-open');
+				nav.classList.remove('menu-open');
+				toggle.setAttribute('aria-expanded', 'false');
+				menu.setAttribute('aria-hidden', 'true');
+			});
+		});
+	}
+
+	// Run on initial load and after every Astro page transition
+	document.addEventListener('astro:page-load', initNav);
+</script>

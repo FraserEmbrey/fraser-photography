@@ -1,0 +1,63 @@
+---
+import siteConfig from '../../../site.config.mts';
+
+const { wordmark, navItems, socialLinks } = siteConfig;
+const year = new Date().getFullYear();
+---
+
+<footer class="mt-auto border-t border-rule">
+	<div class="wrap py-12 md:py-16">
+		<div class="flex flex-col md:flex-row md:items-start md:justify-between gap-10">
+			<!-- Brand -->
+			<div class="flex flex-col gap-4">
+				<a
+					href="/"
+					class="font-display text-lg tracking-tight text-ink hover:text-accent transition-colors duration-200"
+					aria-label="Fraser Embrey Photography — home"
+				>
+					{wordmark}
+				</a>
+				<p class="text-sm text-muted max-w-xs leading-relaxed">
+					Events and sports photographer based in the UK.
+				</p>
+				<!-- Social links -->
+				<div class="flex items-center gap-4 mt-1">
+					{
+						socialLinks.map((link) => (
+							<a
+								href={link.url}
+								target="_blank"
+								rel="noopener noreferrer"
+								class="text-sm text-muted hover:text-accent transition-colors duration-200"
+								aria-label={`${link.name} — ${link.handle ?? link.url}`}
+							>
+								{link.handle ?? link.name}
+							</a>
+						))
+					}
+				</div>
+			</div>
+
+			<!-- Nav links -->
+			<nav aria-label="Footer navigation" class="flex flex-col gap-3 md:items-end">
+				{
+					navItems.map((item) => (
+						<a
+							href={item.href}
+							class="text-sm font-body text-muted hover:text-accent transition-colors duration-200"
+						>
+							{item.label}
+						</a>
+					))
+				}
+			</nav>
+		</div>
+
+		<!-- Bottom bar -->
+		<div class="mt-10 pt-6 border-t border-rule flex flex-col sm:flex-row sm:justify-between gap-2">
+			<p class="text-xs text-muted">
+				&copy; {year} {siteConfig.owner}. All rights reserved.
+			</p>
+		</div>
+	</div>
+</footer>
